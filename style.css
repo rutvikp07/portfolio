@@ -1,0 +1,427 @@
+body,
+html {
+    background-color: 232732;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-bar ul {
+    text-align: center;
+}
+
+li {
+    display: inline-flex;
+    text-align: center;
+}
+
+.nav-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px 40;
+
+}
+
+.nav-bar a:hover {
+    background-color: rgba(240, 248, 255, 0.304);
+    border-radius: 20%;
+}
+
+.main-pic,
+.main-pic-font {
+    padding-top: 6%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-pic img {
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: -20px -10px 60px rgba(71, 71, 71, 0.662);
+}
+
+.main-pic-font {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 0%;
+    display: contents;
+}
+
+.main-pic-font p {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.text {
+    font-size: 35px;
+    position: relative;
+    color: rgb(253, 173, 0);
+
+}
+
+.text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: 232732;
+    border-left: 4px solid rgb(138, 89, 241);
+    animation: animationText 5s steps(12) infinite;
+
+}
+
+.second-text {
+    margin: 20% 30%;
+    padding: 0;
+    font-size: 20px;
+    align-items: center;
+}
+
+.dynamic-text p {
+    font-size: 25px;
+    margin: 20px 20%;
+}
+
+.home-btn {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.home-btn a:hover {
+    background-color: rgba(250, 235, 215, 0.418);
+}
+
+.home-btn a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    margin: 90px;
+    padding: 15px 35px;
+    background-color: rgb(88, 88, 88);
+    border: 2px solid rgba(0, 0, 0, 0.429);
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(71, 71, 71, 0.662);
+}
+
+.home-btn a:first-child {
+    background-color: rgba(153, 78, 223, 0.763);
+}
+
+.AboutMeSection {
+    height: 55Vh;
+    margin-top: 5%;
+
+
+}
+
+.abtMe {
+    margin: 10px 0;
+    padding: 0px 15%;
+    display: flex;
+    justify-content: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.aboutme {
+    color: rgb(253, 173, 0);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(29, 214, 199, 0.434);
+}
+
+.abtMe img {
+    width: 400px;
+    box-shadow: 10px 10px 20px rgba(71, 71, 71, 0.662);
+    border-radius: 20px;
+
+}
+
+.text-abtMe {
+    margin: auto 2px;
+    font-size: 20px;
+    padding-left: 40px;
+    width: 50%;
+    height: 50vh;
+    overflow-y: auto;
+
+}
+
+.text-abtMe::-webkit-scrollbar {
+    display: none;
+}
+
+.projects {
+    margin-top: 100px;
+    
+    padding: 0 20%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+}
+
+.project-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.heading-project {
+
+    color: rgb(253, 173, 0);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(29, 214, 199, 0.434);
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-photo img {
+    margin: 0px 10px;
+    width: 70%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.project-text {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: rgba(192, 173, 148, 0.228);
+    box-shadow: 5px 5px 8px rgb(32, 28, 48), 10px 10px 8px rgba(174, 156, 128, 0.646), 15px 15px 8px rgb(0, 0, 0);
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.card {
+    height: 450px;
+    width: 80%;
+    margin: 10px;
+    box-shadow: 10px 10px 20px rgba(141, 140, 140, 0.089);
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(36, 38, 42, 0.598);
+
+}
+
+.info a {
+    top: 10px;
+    color: bisque;
+    text-decoration: none;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.card .info {
+    color: rgb(255, 255, 255);
+    transform: translateY(-10px);
+}
+
+.project-text {
+    color: rgb(248, 204, 59);
+}
+
+.description {
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.contact-head {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    color: rgb(253, 173, 0);
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(29, 214, 199, 0.434);
+    
+}
+.container1 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+/* Contact Form */
+.contact-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+/* Contact Info */
+.contact-info {
+    width: 40%;
+    text-align: left;
+    
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.social-icons i {
+    font-size: 24px;
+    background: #7e4747;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.form{
+    border: 2px solid black;
+    padding: 30px 80px;
+    font-size: 20px;
+}
+.form label, input, textarea{
+    margin: 10px;
+    width: 300px;
+    height: 45px;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  @media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .contact-info p {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons i {
+        margin: 0 10px;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+@keyframes animationText {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
