@@ -488,7 +488,7 @@ input[type=submit] {
         height: 200px;
     }
     .projects{
-        margin-top: auto;
+        margin-top: 50px;
     }
     .card-photo img {
         align-items: center;
