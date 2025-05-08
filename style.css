@@ -13,19 +13,21 @@ html {
 body::-webkit-scrollbar {
     display: none;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .hamburger span {
+}
+
+.hamburger span {
     height: 3px;
     width: 25px;
     background: #fff;
     margin: 4px 0;
     transition: 0.4s;
-  }
+}
+
 .nav-bar ul {
     text-align: center;
 }
@@ -391,45 +393,52 @@ input[type=submit] {
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         width: 100%;
         margin: 0;
-        background-color: black ;
+        background-color: black;
     }
-    .main-pic img{
+
+    .main-pic img {
         height: 70%;
         width: 70%;
     }
-    .text:before{
+
+    .text:before {
         background-color: black;
     }
+
     .dynamic-text p {
         font-size: 15px;
     }
-    .home-btn{
+
+    .home-btn {
         width: 10px;
         font-size: 10px;
         display: flex;
         flex-direction: row;
         width: 100%;
-        
+
     }
-    .home-btn a{
+
+    .home-btn a {
         margin: auto;
         font-size: 15px;
 
     }
-    .name-text p, .text{
+
+    .name-text p,
+    .text {
         font-size: 30px;
     }
-    
+
     .hamburger {
         display: flex;
         align-items: flex-end;
         padding: 10px;
-      }
-    
-      .nav-links {
+    }
+
+    .nav-links {
         display: none;
         position: absolute;
         top: 60px;
@@ -438,44 +447,79 @@ input[type=submit] {
         width: 100%;
         flex-direction: column;
         align-items: center;
-        
-      }
-    
-      .nav-links.active {
+
+    }
+
+    .nav-links.active {
         display: flex;
         background-color: #202123fb;
         border-radius: 5%;
-        
-        
-      }
-    
-      .nav-links li {
+
+
+    }
+
+    .nav-links li {
         margin: 15px 0;
-        
-      }
-      .aboutme{
+
+    }
+
+    .aboutme {
         font-size: 30px;
-       
-      }
-      .abtme{
+
+    }
+
+    .abtme {
         padding: 0px 7%;
         font-size: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-      .text-abtMe{
+    }
+
+    .text-abtMe {
         width: auto;
         margin-top: 20px;
         font-size: 15px;
         height: 35vh;
-      }
-      .abtme img{
+    }
+
+    .abtme img {
         width: 200px;
         height: 200px;
-      }
-      
-      
+    }
+    .projects{
+        margin-top: auto;
+    }
+    .card-photo img {
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        justify-content: center;
+        display: inline-flex;
+        margin-top: 15px;
+    }
+
+    .card {
+        padding: 3px;
+        height: auto;
+        width: auto;
+    }
+
+    .info {
+        font-size: 10px;
+    }
+    .contact-form{
+        display: none;
+    }
+    .social-icons img{
+        background-color: aliceblue;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .container-info, .container1{
+        text-align: center;
+        width: 100%;
+    }
 }
 
 @keyframes appear {
