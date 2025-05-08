@@ -1,3 +1,10 @@
+
+
+
+  function toggleNavbar() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
 const text = document.querySelector(".text");
 
 const textLoad = () =>{

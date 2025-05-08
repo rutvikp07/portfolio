@@ -12,7 +12,12 @@
 <body>
     <div class="nav-bar">
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#heading-project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -27,11 +32,13 @@
         </div>
         <div class="main-pic-font">
             <br>
+            <div class="name-text">
             <p>
                 I am Rutvik Patel
-                <br>
+                <br></div>
             <div class="dynamic-text">
                 <span class="text">Software Developer</span>
+                
                 <br>
                 <p>I am a dedicated IT student building skills in software testing, web
                     development,
@@ -53,28 +60,20 @@
 
                 <span class="text-abtMe">
 
-                    I am a graduate with a Bachelor’s degree in Information Technology and have completed a diploma in
-                    Software
-                    Testing and System Analysis. My educational background has provided me with a strong foundation in
-                    IT
-                    principles, programming languages, and system design, as well as specialized training in software
-                    testing
-                    methodologies, including functional, performance, and automation testing. I have hands-on experience
-                    with
-                    tools like Selenium, TestNG, and JMeter, and I am skilled in analyzing system requirements, creating
-                    detailed test plans, and executing test cases to ensure software quality and reliability.
-
-                    In addition to my academic and professional training, I have worked on various projects that
-                    demonstrate my
-                    technical expertise and creativity. These include developing web applications using HTML, CSS,
-                    JavaScript,
-                    and PHP, designing software testing frameworks, and creating user-centric designs with Figma. These
-                    projects
-                    have helped me refine my problem-solving skills, attention to detail, and ability to deliver results
-                    within
-                    deadlines. With a passion for technology and a commitment to continuous learning, I am eager to
-                    contribute
-                    my skills to innovative IT projects and grow as a professional in the field.</span>
+                    Hi, I’m Rutvik Patel — a dedicated and curious IT professional with a passion for building and
+                    testing software that works flawlessly. I’m currently completing two post-graduate diplomas at
+                    Fanshawe College: Software and Information Systems Testing and Technical Systems Analysis. My
+                    learning journey is backed by hands-on experience in test automation, web development, and Agile
+                    project collaboration.
+                    <br> <br>
+                    I’ve worked on a variety of projects — from automating tests for full-stack applications using
+                    Selenium and TestNG, to developing secure booking and e-commerce platforms using PHP, MySQL, and
+                    JavaScript. I also enjoy working with tools like Jira, Postman, JMeter, and Git, and I have a
+                    growing interest in AWS and DevOps fundamentals.
+                    <br> <br>
+                    My strengths lie in problem-solving, attention to detail, and a drive to constantly improve. Whether
+                    it’s writing test scripts, designing UI/UX in Figma, or managing test cycles in an Agile setup, I’m
+                    always eager to take on new challenges and learn from every opportunity.</span>
 
 
             </div>
@@ -188,10 +187,10 @@
             </div>
         </div>
         <br>
-       
+
         <div id="contact" class="contact-head">Contact</div>
         <div class="container1">
-            
+
             <div class="contact-form">
                 <input type="text" placeholder="NAME">
                 <input type="email" placeholder="EMAIL">

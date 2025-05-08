@@ -13,7 +13,19 @@ html {
 body::-webkit-scrollbar {
     display: none;
 }
-
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
 .nav-bar ul {
     text-align: center;
 }
@@ -79,7 +91,7 @@ li {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: 232732;
+    background-color: #232732;
     border-left: 4px solid rgb(138, 89, 241);
     animation: animationText 5s steps(12) infinite;
 
@@ -172,7 +184,7 @@ li {
 
 .projects {
     margin-top: 100px;
-    
+
     padding: 0 20%;
     animation: appear linear;
     animation-timeline: view();
@@ -231,7 +243,7 @@ li {
     width: 80%;
     margin: 10px;
     box-shadow: 10px 10px 20px rgba(141, 140, 140, 0.089);
-    border: 2px solid black;
+    border: 2px solid rgb(207, 204, 204);
     padding: 15px;
     border-radius: 5px;
     background-color: rgba(36, 38, 42, 0.598);
@@ -271,8 +283,9 @@ li {
     color: rgb(253, 173, 0);
     font-size: 40px;
     text-shadow: 2px 2px 5px rgba(29, 214, 199, 0.434);
-    
+
 }
+
 .container1 {
     animation: appear linear;
     animation-timeline: view();
@@ -280,11 +293,10 @@ li {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
-    margin: 0 auto;
-    
+    margin: 20px auto;
+
 }
 
-/* Contact Form */
 .contact-form {
     align-items: center;
     display: flex;
@@ -292,7 +304,7 @@ li {
     width: 50%;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -318,13 +330,10 @@ li {
     font-size: 18px;
 }
 
-
-
-/* Contact Info */
 .contact-info {
     width: 40%;
     text-align: left;
-    
+
 }
 
 .contact-info p {
@@ -338,7 +347,6 @@ li {
     font-size: 18px;
 }
 
-/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: space-around;
@@ -352,54 +360,124 @@ li {
     border-radius: 50%;
 }
 
-/* Copyright */
 .copyright {
     text-align: center;
     font-size: 12px;
     opacity: 0.6;
     margin-top: 10px;
 }
-.form{
+
+.form {
     border: 2px solid black;
     padding: 30px 80px;
     font-size: 20px;
 }
-.form label, input, textarea{
+
+.form label,
+input,
+textarea {
     margin: 10px;
     width: 300px;
     height: 45px;
 }
+
 input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    
-  }
-  @media (max-width: 768px) {
-    .container1 {
-        flex-direction: column;
-        width: 90%;
-        text-align: center;
-    }
 
-    .contact-form, .contact-info {
-        width: 100%;
-    }
-
-    .contact-info p {
-        justify-content: center;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .social-icons i {
-        margin: 0 10px;
-    }
 }
+
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+        margin: 0;
+        background-color: black ;
+    }
+    .main-pic img{
+        height: 70%;
+        width: 70%;
+    }
+    .text:before{
+        background-color: black;
+    }
+    .dynamic-text p {
+        font-size: 15px;
+    }
+    .home-btn{
+        width: 10px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .home-btn a{
+        margin: auto;
+        font-size: 15px;
+
+    }
+    .name-text p, .text{
+        font-size: 30px;
+    }
+    
+    .hamburger {
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
+      }
+    
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+    
+      .nav-links.active {
+        display: flex;
+        background-color: #202123fb;
+        border-radius: 5%;
+        
+        
+      }
+    
+      .nav-links li {
+        margin: 15px 0;
+        
+      }
+      .aboutme{
+        font-size: 30px;
+       
+      }
+      .abtme{
+        padding: 0px 7%;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .text-abtMe{
+        width: auto;
+        margin-top: 20px;
+        font-size: 15px;
+        height: 35vh;
+      }
+      .abtme img{
+        width: 200px;
+        height: 200px;
+      }
+      
+      
+}
+
 @keyframes appear {
     from {
         opacity: 0;
