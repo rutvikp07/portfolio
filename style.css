@@ -384,14 +384,28 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #347275;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
 
 }
-
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #176daf;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #007b82;
+  }
+  
 @media (max-width: 768px) {
     body {
         width: 100%;
@@ -512,7 +526,7 @@ input[type=submit] {
         display: none;
     }
     .social-icons img{
-        background-color: aliceblue;
+        background-color: rgb(255, 255, 255);
         margin: 5px;
         border-radius: 5px;
     }
