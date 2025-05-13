@@ -192,19 +192,23 @@
         <div id="contact" class="contact-head">Contact</div>
         <div class="container1">
 
-            <form class="contact-form" action="https://formsubmit.co/rutvik2401@gmail.com" method="POST">
-                <input type="text" placeholder="NAME" required>
-                <input type="email" placeholder="EMAIL" required>
-                <textarea placeholder="MESSAGE" required></textarea>
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/rutvik2401@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="NAME" required>
+                <input type="email" name="email" placeholder="EMAIL" required>
+                <input type="text" name="text" placeholder="TEXT" required>
+                
 
                 <!-- Hidden Inputs -->
                 <input type="hidden" name="_captcha" value="false">
-                <!-- //<input type="hidden" name="_next" value=""> -->
+                <input type="hidden" name="_next" value="https://rutvikp07.github.io/portfolio/">
                 <button type="submit">
                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/telegram-app.png"
                         alt="telegram-app" />
                 </button>
             </form>
+            <div id="thank-you-dialog" class="dialog-box">
+            <p>✅ Thank you for contacting!</p>
+            </div>
 
             <div class="contact-info">
                 <p> London, Ontario</p>

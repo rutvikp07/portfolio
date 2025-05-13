@@ -20,3 +20,14 @@ const textLoad = () =>{
 }
 textLoad();
 setInterval(textLoad,15000);
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const dialog = document.getElementById("thank-you-dialog");
+    dialog.style.display = "block";
+
+    setTimeout(() => {
+      this.submit();
+    }, 5000); 
+  });

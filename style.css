@@ -405,7 +405,21 @@ input[type=submit] {
   .download-btn:hover {
     background-color: #007b82;
   }
-  
+    .dialog-box {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0fff0;
+    border: 2px solid #4CAF50;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #2e7d32;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
 @media (max-width: 768px) {
     body {
         width: 100%;
@@ -522,9 +536,7 @@ input[type=submit] {
     .info {
         font-size: 10px;
     }
-    .contact-form{
-        display: none;
-    }
+    
     .social-icons img{
         background-color: rgb(255, 255, 255);
         margin: 5px;
