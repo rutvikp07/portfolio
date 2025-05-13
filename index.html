@@ -16,7 +16,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-              </div>
+            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#heading-project">Projects</a></li>
@@ -33,12 +33,13 @@
         <div class="main-pic-font">
             <br>
             <div class="name-text">
-            <p>
-                I am Rutvik Patel
-                <br></div>
+                <p>
+                    I am Rutvik Patel
+                    <br>
+            </div>
             <div class="dynamic-text">
                 <span class="text">Software Developer</span>
-                
+
                 <br>
                 <p>I am a dedicated IT student building skills in software testing, web
                     development,
@@ -191,15 +192,19 @@
         <div id="contact" class="contact-head">Contact</div>
         <div class="container1">
 
-            <div class="contact-form">
-                <input type="text" placeholder="NAME">
-                <input type="email" placeholder="EMAIL">
-                <textarea placeholder="MESSAGE"></textarea>
+            <form class="contact-form" action="https://formsubmit.co/rutvik2401@gmail.com" method="POST">
+                <input type="text" placeholder="NAME" required>
+                <input type="email" placeholder="EMAIL" required>
+                <textarea placeholder="MESSAGE" required></textarea>
+
+                <!-- Hidden Inputs -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- //<input type="hidden" name="_next" value=""> -->
                 <button type="submit">
                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/telegram-app.png"
                         alt="telegram-app" />
                 </button>
-            </div>
+            </form>
 
             <div class="contact-info">
                 <p> London, Ontario</p>
