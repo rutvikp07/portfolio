@@ -353,13 +353,18 @@ li {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    
 }
-
+.social-icons img{
+    background-color: #fff;
+    border-radius: 10px;
+}
 .social-icons i {
     font-size: 24px;
     background: #7e4747;
     padding: 10px;
     border-radius: 50%;
+    
 }
 
 .copyright {
@@ -532,11 +537,18 @@ input[type=submit] {
         height: auto;
         width: auto;
     }
-
+    .social-icons{
+        display: flex;
+        margin: 20px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     .info {
         font-size: 10px;
     }
-    
+    .contact-info p{
+        font-size: 12px;
+    }
     .social-icons img{
         background-color: rgb(255, 255, 255);
         margin: 5px;
