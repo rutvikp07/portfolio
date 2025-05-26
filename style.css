@@ -1,6 +1,6 @@
 body,
 html {
-    background-color: 232732;
+    background-color: black;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
@@ -93,7 +93,7 @@ li {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #232732;
+    background-color: #000000;
     border-left: 4px solid rgb(138, 89, 241);
     animation: animationText 5s steps(12) infinite;
 
